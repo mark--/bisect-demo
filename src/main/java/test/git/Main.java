@@ -16,7 +16,9 @@ public class Main {
 			System.err.println("Wrong Argument, number exptected: " + args[0]);
 			return;
 		}
-		System.out.println(new Main().fibbonaci(max));
+		new Main().fibbonaci(max)
+		        .stream()
+		        .forEach(System.out::println);
 	}
 
 	public List<BigInteger> fibbonaci(BigInteger n) {
