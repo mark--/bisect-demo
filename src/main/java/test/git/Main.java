@@ -1,28 +1,30 @@
 package test.git;
 
+import java.math.BigInteger;
 import java.util.LinkedList;
 import java.util.List;
 
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println(new Main().fibbonaci(Integer.parseInt(args[0])));
+		System.out.println(new Main().fibbonaci(new BigInteger(args[0])));
 	}
 
-	public List<Integer> fibbonaci(int n) {
-		LinkedList<Integer> result = new LinkedList<Integer>();
+	public List<BigInteger> fibbonaci(BigInteger n) {
+		LinkedList<BigInteger> result = new LinkedList<BigInteger>();
 
-		if (n < 1) {
+		if (n.compareTo(BigInteger.ONE) < 0) {
 			return result;
 		}
 
-		int a = 1, b = 1;
+		BigInteger a = BigInteger.ONE;
+		BigInteger b = BigInteger.ONE;
 
 		result.add(a);
-		while (b <= n) {
+		while (b.compareTo(n) < 0) {
 			result.add(b);
 
-			int c = a + b;
+			BigInteger c = a.add(b);
 			a = b;
 			b = c;
 
