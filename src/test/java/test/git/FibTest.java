@@ -39,7 +39,13 @@ public class FibTest {
 		        .collect(toList()), new Main().fibbonaci(BigInteger.valueOf(1)));
 	}
 
-	public void noArgumentDefaultsRaisesNoException() {
+	public void noArgumentRaisesNoException() {
 		Main.main(new String[] {});
 	}
+
+	@Test
+	public void invalidArgumentRaisesNoException() {
+		Main.main(new String[] { "foo" });
+	}
+
 }

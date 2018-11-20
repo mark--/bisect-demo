@@ -8,9 +8,15 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		String max = args.length > 0 ? args[0] : "100";
-
-		System.out.println(new Main().fibbonaci(new BigInteger(max)));
+		String maxArgument = args.length > 0 ? args[0] : "100";
+		BigInteger max;
+		try {
+			max = new BigInteger(maxArgument);
+		} catch (NumberFormatException e) {
+			System.err.println("Wrong Argument, number exptected: " + args[0]);
+			return;
+		}
+		System.out.println(new Main().fibbonaci(max));
 	}
 
 	public List<BigInteger> fibbonaci(BigInteger n) {
