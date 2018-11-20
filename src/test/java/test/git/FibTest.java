@@ -15,7 +15,7 @@ public class FibTest {
 		assertEquals(List.of(1, 1, 2, 3, 5, 8, 13)
 		        .stream()
 		        .map(BigInteger::valueOf)
-		        .collect(toList()), new Main().fibbonaci(BigInteger.valueOf(20)));
+		        .collect(toList()), new Fibbonaci().fibbonaci(BigInteger.valueOf(20)));
 	}
 
 	@Test
@@ -23,12 +23,12 @@ public class FibTest {
 		assertEquals(List.of(1, 1, 2, 3, 5, 8)
 		        .stream()
 		        .map(BigInteger::valueOf)
-		        .collect(toList()), new Main().fibbonaci(BigInteger.valueOf(10)));
+		        .collect(toList()), new Fibbonaci().fibbonaci(BigInteger.valueOf(10)));
 	}
 
 	@Test
 	public void fib3() {
-		assertEquals(List.of(), new Main().fibbonaci(BigInteger.valueOf(0)));
+		assertEquals(List.of(), new Fibbonaci().fibbonaci(BigInteger.valueOf(0)));
 	}
 
 	@Test
@@ -36,7 +36,7 @@ public class FibTest {
 		assertEquals(List.of(1)
 		        .stream()
 		        .map(BigInteger::valueOf)
-		        .collect(toList()), new Main().fibbonaci(BigInteger.valueOf(1)));
+		        .collect(toList()), new Fibbonaci().fibbonaci(BigInteger.valueOf(1)));
 	}
 
 	public void noArgumentRaisesNoException() {
