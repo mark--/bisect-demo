@@ -7,7 +7,10 @@ import java.util.List;
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println(new Main().fibbonaci(new BigInteger(args[0])));
+
+		String max = args.length > 0 ? args[0] : "100";
+
+		System.out.println(new Main().fibbonaci(new BigInteger(max)));
 	}
 
 	public List<BigInteger> fibbonaci(BigInteger n) {

@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class FibTest {
 
 	@Test
-	public void fib() {
+	public void fibbonaciUpto20IsCorrect() {
 		assertEquals(List.of(1, 1, 2, 3, 5, 8, 13)
 		        .stream()
 		        .map(BigInteger::valueOf)
@@ -28,8 +28,7 @@ public class FibTest {
 
 	@Test
 	public void fib3() {
-		assertEquals(List.of(), new Main()
-		        .fibbonaci(BigInteger.valueOf(0)));
+		assertEquals(List.of(), new Main().fibbonaci(BigInteger.valueOf(0)));
 	}
 
 	@Test
@@ -38,5 +37,9 @@ public class FibTest {
 		        .stream()
 		        .map(BigInteger::valueOf)
 		        .collect(toList()), new Main().fibbonaci(BigInteger.valueOf(1)));
+	}
+
+	public void noArgumentDefaultsRaisesNoException() {
+		Main.main(new String[] {});
 	}
 }
