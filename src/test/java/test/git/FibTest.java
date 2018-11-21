@@ -44,6 +44,11 @@ public class FibTest {
 	}
 
 	@Test
+	public void noArgumentDefaultsTo100() {
+		Main.main(new String[] {});
+	}
+
+	@Test
 	public void invalidArgumentRaisesNoException() {
 		Main.main(new String[] { "foo" });
 	}
