@@ -26,4 +26,8 @@ public class Main {
 		return result;
 	}
 
+	static void printHelp() {
+		System.out.println("Aufruf mit java -jar <jarfile> <zahl>");
+	}
+
 }
