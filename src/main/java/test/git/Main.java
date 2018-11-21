@@ -12,6 +12,10 @@ public class Main {
 	public List<Integer> fibbonaci(int n) {
 		LinkedList<Integer> result = new LinkedList<Integer>();
 
+		if (n < 1) {
+			return result;
+		}
+
 		int a = 1, b = 1;
 
 		result.add(a);
