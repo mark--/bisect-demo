@@ -1,2 +1,1 @@
-Hi there
-TODO: write docs
+Aufruf mit java -jar <jarfile> <max> <mul>
