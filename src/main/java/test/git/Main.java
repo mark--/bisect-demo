@@ -30,10 +30,16 @@ public class Main {
 
 		BigInteger m = BigInteger.valueOf(mul);
 
+		Fibbonaci fib = new Fibbonaci();
+
+		fib.banner("Anfang");
+
 		new Fibbonaci().fibbonaci(max)
 		        .stream()
 		        .map(n -> n.multiply(m))
 		        .forEach(System.out::println);
+
+		fib.banner("Ende");
 	}
 
 	static void printHelp() {
