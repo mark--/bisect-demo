@@ -4,12 +4,14 @@ import java.math.BigInteger;
 
 public class Main {
 
+	public static final String CALL = "Aufruf mit java -jar .. <MAX> <MUL>";
+
 	public static void main(String[] args) {
 
 		if (args.length >= 1) {
 			if (args[0].trim()
 			        .equals("-h")) {
-				System.out.println("Aufruf mit java -jar .. <MAX> <MUL>");
+				System.out.println(CALL);
 				return;
 			}
 		}
@@ -37,7 +39,7 @@ public class Main {
 	}
 
 	static void printHelp() {
-		System.out.println("Aufruf mit java -jar <jarfile> <zahl>");
+		System.out.println(CALL);
 	}
 
 }
