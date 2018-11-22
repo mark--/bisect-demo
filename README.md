@@ -1,1 +1,1 @@
-Aufruf mit java -jar <jarfile> <max> <mul>
+Call java -jar <jarfile> <max> <mul>

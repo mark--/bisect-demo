@@ -4,7 +4,7 @@ import java.math.BigInteger;
 
 public class Main {
 
-	public static final String CALL = "Aufruf mit java -jar .. <MAX> <MUL>";
+	public static final String CALL = "Call java -jar .. <MAX> <MUL>";
 
 	public static void main(String[] args) {
 
