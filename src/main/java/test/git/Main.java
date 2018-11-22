@@ -14,8 +14,17 @@ public class Main {
 			System.err.println("Wrong Argument, number exptected: " + args[0]);
 			return;
 		}
+
+		int mul = 1;
+		if (args.length >= 2) {
+			mul = Integer.parseInt(args[1]);
+		}
+
+		BigInteger m = BigInteger.valueOf(mul);
+
 		new Fibbonaci().fibbonaci(max)
 		        .stream()
+		        .map(n -> n.multiply(m))
 		        .forEach(System.out::println);
 	}
 
