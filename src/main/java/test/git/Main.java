@@ -6,6 +6,14 @@ public class Main {
 
 	public static void main(String[] args) {
 
+		if (args.length >= 1) {
+			if (args[0].trim()
+			        .equals("-h")) {
+				System.out.println("Aufruf mit java -jar .. <MAX> <MUL>");
+				return;
+			}
+		}
+
 		String maxArgument = args.length > 0 ? args[0] : "100";
 		BigInteger max;
 		try {
