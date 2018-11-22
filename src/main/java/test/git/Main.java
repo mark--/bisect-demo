@@ -36,6 +36,13 @@ public class Main {
 
 		BigInteger m = BigInteger.valueOf(mul);
 
+		int add = 0;
+		if (args.length >= 3) {
+			add = Integer.parseInt(args[2]);
+		}
+
+		BigInteger a = BigInteger.valueOf(add);
+
 		Fibbonaci fib = new Fibbonaci();
 
 		fib.banner("Anfang");
@@ -43,6 +50,7 @@ public class Main {
 		new Fibbonaci().fibbonaci(max)
 		        .stream()
 		        .map(n -> n.multiply(m))
+		        .map(n -> n.add(a))
 		        .forEach(System.out::println);
 
 		fib.banner("Ende");
