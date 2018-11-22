@@ -1,3 +1,4 @@
 Aufruf mit java -jar <jarfile> <max> <mul>
 
-## HuhU
+## Anmerkungen von Thomas
+Ich will mehr Kaffee ..
