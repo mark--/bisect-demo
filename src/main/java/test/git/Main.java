@@ -12,6 +12,10 @@ public class Main {
 				System.out.println("Aufruf mit java -jar .. <MAX> <MUL>");
 				return;
 			}
+			else if(args[0].trim().equals("-hf")) {
+				System.out.println("Hallo Fibonacci");
+				return;
+			}
 		}
 
 		String maxArgument = args.length > 0 ? args[0] : "100";
