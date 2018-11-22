@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.kvwl</groupId>
 	<artifactId>test.git</artifactId>
-	<version>1.0.1-FEAT-7-SNAPSHOT</version>
+	<version>2.0.0-RC-SNAPSHOT</version>
 	<dependencies>
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
