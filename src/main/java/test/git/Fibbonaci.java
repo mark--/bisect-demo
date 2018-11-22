@@ -26,4 +26,8 @@ public class Fibbonaci {
 		}
 		return result;
 	}
+
+	public void banner(String text){
+		System.out.println("------ "+text+" ------");
+	}
 }
