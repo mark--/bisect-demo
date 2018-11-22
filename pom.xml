@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.kvwl</groupId>
 	<artifactId>test.git</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<dependencies>
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
@@ -53,6 +53,14 @@
             <version>2.22.1</version>
             <configuration>
                 <useSystemClassLoader>false</useSystemClassLoader>
+            </configuration>
+    </plugin>
+    <plugin>
+            <groupId>com.amashchenko.maven.plugin</groupId>
+            <artifactId>gitflow-maven-plugin</artifactId>
+            <version>1.10.0</version>
+            <configuration>
+                <!-- optional configuration -->
             </configuration>
         </plugin>
    <plugin>
